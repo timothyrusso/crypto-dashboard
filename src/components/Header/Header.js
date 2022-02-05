@@ -1,5 +1,5 @@
 import React from "react";
-import api from "../utils/api";
+import api from "../../utils/api";
 
 function Header() {
 
@@ -18,7 +18,7 @@ function Header() {
     return (
             <div>
                 <h1>BTC price</h1>
-                <p>{currencyPrice} $</p>
+                <p>{Math.round(currencyPrice)} $</p>
             </div>
     )
 }
